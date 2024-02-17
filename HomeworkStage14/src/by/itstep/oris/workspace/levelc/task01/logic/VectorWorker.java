@@ -7,11 +7,12 @@ public class VectorWorker {
 		}
 		
 		double average = findAvrg(vector);
+				
 		int count = 0;
 		
 		for(int el : vector) {
 			if(el > average) {
-				count += el;
+				count++;
 			}
 		}
 		return count;
@@ -20,9 +21,9 @@ public class VectorWorker {
 	private static double findAvrg(int... vector) {
 		double average = 0;
 		
-		for (int i = 0; i < vector.length; i++) {
-			average += vector[i];
-		}
+		for (int el : vector) { 
+			  average += el; 
+		} 
 		return average / vector.length;
 	}
 }

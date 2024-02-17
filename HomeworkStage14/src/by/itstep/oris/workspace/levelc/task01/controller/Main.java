@@ -12,7 +12,7 @@ public class Main {
 		
 		int maxBound = 5;
 		
-		int minBound = -5;
+		int minBound = 0;
 		
 		vector = UserSimulator.inputRandomNumbers(maxBound, minBound, vector);
 		
