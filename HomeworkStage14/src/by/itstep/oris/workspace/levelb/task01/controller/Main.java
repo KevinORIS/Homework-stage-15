@@ -6,7 +6,7 @@ import by.itstep.oris.workspace.user.UserSimulator;
 
 public class Main {
 	public static void main(String[] args) {
-int size = 10;
+		int size = 10;
 		
 		int[] vector = new int[size];
 		
