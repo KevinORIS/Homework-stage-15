@@ -25,9 +25,11 @@ public class VectorWorker {
 
 	private static int findIndexOfMax(double... vector) {
 		int index = 0;
-
+		double max = vector[0];
+		
 		for (int i = 1; i < vector.length; i++) {
-			if (vector[i] > vector[i - 1]) {
+			if (vector[i] > max) {
+				max = vector[i];
 				index = i;
 			}
 		}
@@ -37,9 +39,11 @@ public class VectorWorker {
 
 	private static int findIndexOfMin(double... vector) {
 		int index = 0;
+		double min = vector[0];
 
 		for (int i = 1; i < vector.length; i++) {
-			if (vector[i] < vector[i - 1]) {
+			if (vector[i] < min) {
+				min = vector[i];
 				index = i;
 			}
 		}
