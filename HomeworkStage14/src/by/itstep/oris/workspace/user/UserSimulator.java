@@ -45,4 +45,10 @@ public class UserSimulator {
 		}
 		return array;
 	}
+	public static double[] inputSpecificNumbers(double[] array) {
+		for (int i = 0; i < array.length; i++) {
+			array[i] = SCANNER.nextDouble();
+		}
+		return array;
+	}
 }
