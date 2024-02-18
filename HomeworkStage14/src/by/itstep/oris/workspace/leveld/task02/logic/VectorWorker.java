@@ -1,7 +1,7 @@
 package by.itstep.oris.workspace.leveld.task02.logic;
 
 public class VectorWorker {
-	public static double calcSumBetweenZeroEl(int... vector) {
+	public static int calcSumBetweenZeroEl(int... vector) {
 		if (vector == null) {
 			return -1;
 		}
@@ -13,7 +13,7 @@ public class VectorWorker {
 			return -1;
 		}
 		
-		double sum = 0;
+		int sum = 0;
 
 		for (int i = indexFirst + 1; i < indexSecond; i++) {
 			sum += vector[i];
