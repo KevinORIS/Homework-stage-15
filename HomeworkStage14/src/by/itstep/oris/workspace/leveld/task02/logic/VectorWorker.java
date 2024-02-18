@@ -31,7 +31,7 @@ public class VectorWorker {
 	}
 
 	private static int findLastZero(int... vector) {
-		for (int i = vector.length; i < vector.length; i--) {
+		for (int i = vector.length - 1; i >= 0; i--) {
 			if (vector[i] == 0) {
 				return i;
 			}
