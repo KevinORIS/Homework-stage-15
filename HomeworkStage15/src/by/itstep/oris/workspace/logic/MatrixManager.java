@@ -28,4 +28,17 @@ public class MatrixManager {
 		}
 		return count;
 	}
+	//O(N*N)
+	public static int countPositiveElAboveDiagonal(int[][] matrix) {
+		int count = 0;
+		
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = i + 1; j < matrix[i].length; j++) {
+				if (matrix[i][j] >= 0) {
+					count++;
+				}
+			}
+		}
+		return count;
+	}
 }
